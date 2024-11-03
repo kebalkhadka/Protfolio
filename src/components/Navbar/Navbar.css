@@ -1,0 +1,144 @@
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #1C1C27;
+  height: 80px;
+  font-weight: 500;
+  color: var(--white);
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+/* Logo styling */
+.logo {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.list-items{
+  padding-right: 50px;
+}
+/* Desktop menu items */
+.list-items ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+}
+
+/* Navigation list item styling */
+.list-items li {
+  cursor: pointer;
+}
+
+/* Links container to hold GitHub button */
+.links {
+  display: flex;
+  justify-content: center; /* Center the button */
+  align-items: center;
+  margin-right: 50px;
+}
+
+/* Button styling */
+.links button {
+  background: none;
+  color: var(--primary-dark);
+  border: 1px solid var(--primary-dark);
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Button hover effect */
+.links button:hover {
+  color: var(--white);
+  background-color: var(--primary-dark);
+  transition: 0.5s ease-in-out;
+}
+
+/* Hamburger menu styling */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+  margin-right: 20px;
+  color: var(--primary-dark);
+}
+
+/* Mobile menu (hidden by default) */
+.mobile-items {
+  display: none;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+/* Mobile menu when visible */
+.mobile-items.show {
+  display: flex;
+  max-height: 300px;
+  opacity: 1;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: #1C1C27;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Mobile menu items */
+.mobile-items ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-items li {
+  cursor: pointer;
+  color: var(--white);
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1300px) {
+  nav {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  /* Reduce the gap between menu items */
+  .list-items ul {
+    gap: 24px;
+  }
+
+  /* Reduce button padding to fit better */
+  .links button {
+    padding: 8px 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .list-items {
+    display: none;
+  }
+  .links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}

@@ -1,0 +1,147 @@
+#projects{
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.5;
+}
+.project-heading{
+    font-size: 52px;
+    font-weight: 600;
+
+}
+.projects-description{
+ font-size: 18px;
+ font-weight: 600;
+ color: #7F8088;
+ line-height: 1.6;
+ word-wrap: break-word;
+}
+.projectsContainer{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+.projectsContainer h3{
+    font-size: 28px;
+    font-weight: 600;
+
+}
+.projectCard{
+    background-color: #191924;
+    width: 330px;
+    height: 490px;border-radius: 12px;
+}
+ 
+  .wrapper {
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .projectImage{
+    width: 290px;
+    height: 190px;
+    border-radius: 12px;
+  }
+  
+  .projectTitle {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #7F8088;
+    margin-bottom: 0;
+  }
+  .projectDate{
+    margin: 0px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #7F8088;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+  }
+  .view{
+    color: #7F8088;
+    
+    border-radius: 50%;
+    background-color: #231E36;
+  }
+
+  .tags {
+    margin-top: 15px;
+  }
+  
+  .tagButton {
+    background-color: #231E36;
+    color: #854CE6;
+    border: none;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .tagButton:hover {
+    background-color: #0056b3;
+  }
+  .projectDes{
+    color: #7F8088;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .headings{
+      margin-bottom: 0.5rem;
+    }
+
+  
+    .about_skill_container img {
+      height: 120px;
+      width: 120px;
+    }
+    #projects{
+      padding: 0;
+    }
+    .project-heading {
+      font-size: 42px;
+      text-align: left; /* Align heading to the left */
+      width: 100%; /* Ensure it takes full width */
+      margin-left: 20px; /* Add left margin for spacing */
+      padding-left: 10px;
+    }
+  
+    .projects-description {
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: left; /* Align description to the left */
+      margin-left: 20px; /* Match left alignment */
+    }
+  }
+  
+  /* Mobile screens */
+  @media (max-width: 480px) {
+    .project-heading {
+      font-size: 32px;
+      text-align: left; /* Align heading to the left */
+      width: 100%; /* Ensure it takes full width */
+      margin-left: 15px; /* Adjust left margin for smaller screens */
+    }
+  
+    .projects-description {
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: left; /* Align description to the left */
+      margin-left: 15px; /* Match left alignment */
+    }
+  }

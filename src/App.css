@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px !important;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 12px; /* Thickness of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #222A35; /* Background of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #575C66; /* Color of the scrollbar thumb */
+    height: 10px; /* Fixed height of the scrollbar thumb */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #626970;
+}
+
+.app {
+    background-color: var(--bg-dark); 
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.Container {
+    margin: 0 auto;
+    max-width: 1050px;
+}

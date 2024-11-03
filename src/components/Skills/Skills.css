@@ -1,0 +1,105 @@
+/* General styling */
+.skills {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0 1rem; /* Add padding for smaller screens */
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+  }
+  
+  .headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    text-align: center; /* Center align for all screen sizes */
+  }
+  
+  .skills {
+    font-size: 52px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem; /* Add margin for better spacing */
+  }
+  
+  .description {
+    font-size: 18px;
+    font-weight: 600;
+    color: #7F8088;
+    text-align: center;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    word-wrap: break-word; 
+    line-height: 1.5; 
+    
+  }
+  
+  .about_skill_container {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* Add gap for better spacing */
+  }
+  
+  .about_skill_container img {
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px #9800FF;
+    height: 150px;
+    margin: 1rem;
+    width: 150px;
+    transition: transform 0.3s;
+  }
+  
+  .about_skill_container img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* Tablet screens */
+  @media (max-width: 768px) {
+    .headings{
+        margin-bottom: 0.5rem;
+    }
+    .skills {
+      font-size: 42px;
+    }
+  
+    .description {
+      font-size: 16px;
+      line-height: 1.6; /* Increase line height for smaller screens */
+      margin-bottom: 0;
+    }
+  
+    .about_skill_container img {
+      height: 120px;
+      width: 120px;
+    }
+  }
+  
+  /* Mobile screens */
+  @media (max-width: 480px) {
+    .skills {
+      font-size: 36px;
+    }
+  
+    .description {
+      font-size: 14px;
+      margin: 0.5rem 0; /* Adjust margins for smaller screens */
+      line-height: 1.6; /* Further increase line height for readability */
+    }
+  
+    .about_skill_container {
+      gap: 0;
+    }
+  
+    .about_skill_container img {
+      height: 100px;
+      width: 100px;
+    }
+  }
+  

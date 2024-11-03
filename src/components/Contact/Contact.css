@@ -1,0 +1,156 @@
+#contact{
+    padding-bottom: 10px;
+}
+.headings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.5;
+}
+h3{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.contact-heading{
+    font-size: 28px;
+}
+.contact-description{
+ font-size: 18px;
+ font-weight: 600;
+ color: #7F8088;
+}
+form {
+    background-color: #151224;
+    margin: 50px 240px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px 1px #9800FF; 
+    padding-left: 40px;    
+    transition: none; 
+    animation: none; 
+    overflow :hidden;
+}
+
+form h3 {
+    font-size: 28px;
+}
+
+input,
+textarea {
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 12px 16px;
+    background: none; 
+    box-shadow: none; 
+    border: 1px solid rgb(61, 60, 60)
+}
+
+textarea {
+    resize: vertical; 
+    min-height: 150px; 
+}
+
+input:focus,
+textarea:focus {
+    outline: none; 
+    box-shadow: none; 
+}
+
+.message {
+    padding: 12px; 
+    box-sizing: border-box; 
+    overflow: auto; 
+    white-space: pre-wrap; 
+}
+
+.submit-button {
+    width: 90%; 
+    padding: 12px 16px;
+    background-color: #A500FF; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer;
+    font-size: 16px; 
+    margin-top: 10px; 
+    transition: background-color 0.3s ease; 
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.submit-button:hover {
+    background-color: #7e00c7; 
+}
+
+@media screen and (max-width: 768px) {
+    .headings {
+        display: flex;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    }
+    form{
+      margin:0 30px;
+      
+    }
+    .contact-description{
+        text-wrap: wrap;
+
+        line-height: 1.2;
+
+    }
+    .contact-heading{
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+@media screen and(min-width:550px) {
+    
+    
+}
+
+/* Custom styles for toast notifications */
+.custom-toast-success {
+    color: #fff; /* White font color */
+    background-color: #4caf50; /* Dark green background */
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 12px;
+  }
+  
+  .custom-toast-error {
+    color: #fff; /* White font color */
+    background-color: #f44336; /* Dark red background */
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 12px;
+  }
+  
+  /* Optional: Toastify defaults customization for white background toast */
+  .Toastify__toast {
+    background-color: #000; /* Make the background dark for readability */
+    color: #fff; /* Ensure white text */
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  /* Toastify success and error specific background colors */
+  .Toastify__toast--success {
+    background-color: #7e00c7 !important; /* Green */
+  }
+  
+  .Toastify__toast--error {
+    background-color: #f44336 !important; /* Red */
+  }
+  
+  /* Adjusting the toast container position */
+  .Toastify__toast-container {
+    top: 10px !important;
+    right: 10px !important;
+  }
+  
