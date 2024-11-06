@@ -3,7 +3,7 @@ import rayal_park from '../../src/assets/images/Rayalpark_img.png';
 import Techexp from '../../src/assets/images/techExp_img.png';
 import Smartspace from '../../src/assets/images/Smartspace_img.png';
 import Movie from '../../src/assets/images/movieapp.png'
-
+import flavoro from '../../src/assets/images/flavoro.png'
 export const Bio = {
     name: "Kebal khadka",
     roles: "Front-end developer",
@@ -138,7 +138,7 @@ export const Bio = {
       webapp: "https://trackify.duckdns.org",
     },  
     {
-      id: 4,
+      id: 5,
       title: "MovieHub",
       date: "Sep 2024",
       description:
@@ -152,5 +152,21 @@ export const Bio = {
         "material ui",
       ],
       webapp: "https://moviehub-kebal.netlify.app/",
+    },
+    {
+      id: 6,
+      title: "Flavoro foods",
+      date: "Nov 2024",
+      description:
+        "E-commerce created using react with features such as advanced filtering search by category.",
+      image:flavoro,
+      tags: [
+        "React",
+        "Tailwind CSS",
+        "JavaScript",
+        "JSON",
+        "Redux",
+      ],
+      webapp: "https://flavoro-foods-kebal.netlify.app/",
     } 
   ];
