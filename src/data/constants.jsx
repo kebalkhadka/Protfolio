@@ -4,6 +4,8 @@ import Techexp from '../../src/assets/images/techExp_img.png';
 import Smartspace from '../../src/assets/images/Smartspace_img.png';
 import Movie from '../../src/assets/images/movieapp.png'
 import flavoro from '../../src/assets/images/flavoro.png'
+import Fitness from '../../src/assets/images/Fitness.png'
+
 export const Bio = {
     name: "Kebal khadka",
     roles: "Front-end developer",
@@ -168,5 +170,20 @@ export const Bio = {
         "Redux",
       ],
       webapp: "https://flavoro-foods-kebal.netlify.app/",
+    },
+    {
+      id: 7,
+      title: "Exercise app",
+      date: "Nov 2024",
+      description:
+        "Exercise app created using rapid api with search functionality",
+      image:Fitness,
+      tags: [
+        "React",
+        "Material ui",
+        "Rapid api",
+        "JSON",
+      ],
+      webapp: "https://fitpro-kebal.netlify.app/"
     } 
   ];
