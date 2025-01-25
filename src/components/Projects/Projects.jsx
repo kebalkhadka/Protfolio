@@ -1,16 +1,15 @@
-import React from 'react';
-import './Projects.css';
-import { projects } from '../../data/constants';
-import LinkIcon from '@mui/icons-material/Link';
-
+import React from "react";
+import "./Projects.css";
+import { projects } from "../../data/constants";
+import LinkIcon from "@mui/icons-material/Link";
 
 const truncateText = (text, wordLimit) => {
-    const words = text.split(' ');
-    
-    if (words.length > wordLimit) {
-        return words.slice(0, wordLimit).join(' ') + '...';
-    }
-    return text;
+  const words = text.split(" ");
+
+  if (words.length > wordLimit) {
+    return words.slice(0, wordLimit).join(" ") + "...";
+  }
+  return text;
 };
 
 const Projects = () => {
@@ -25,13 +24,13 @@ const Projects = () => {
             I have worked on web apps and here are some of my projects.
           </p>
         </div>
-        
+
         <div className="projectsContainer">
           {projects.map((project, index) => (
             <div key={index} className="projectCard">
               <div className="wrapper">
                 <img
-                  className='projectImage'
+                  className="projectImage"
                   src={project.image}
                   alt={project.title}
                 />
@@ -43,14 +42,13 @@ const Projects = () => {
                   ))}
                 </div>
                 <h4 className="projectTitle">{project.title}</h4>
-                <p className='projectDate'>
+                <p className="projectDate">
                   {project.date}
-                  <a href ={project.webapp} target='blank'>
-                    <LinkIcon className='view'/ >
+                  <a href={project.webapp} target="blank">
+                    <LinkIcon className="view" />
                   </a>
-
                 </p>
-                <p className='projectDes'>
+                <p className="projectDes">
                   {truncateText(project.description, wordLimit)}
                 </p>
               </div>
